@@ -3,3 +3,19 @@
 ################################################################################
 
 /.vs/slnx.sqlite
+/packages
+/PromotionEngine/obj/Debug
+/PromotionEngine.Common/obj/Debug
+/PromotionEngine.Core/obj/Debug
+/PromotionEngine.Core.Test/obj/Debug
+/PromotionEngine.Data/obj/Debug
+/PromotionEngine.Data.Test/obj/Debug
+/PromotionEngine.Type/obj/Debug
+/.vs
+/PromotionEngine.Type/obj/Release
+/PromotionEngine.Data.Test/obj/Release
+/PromotionEngine.Data/obj/Release
+/PromotionEngine.Core.Test/obj/Release
+/PromotionEngine.Core/obj/Release
+/PromotionEngine.Common/obj/Release
+/PromotionEngine/obj/Release
