@@ -19,3 +19,11 @@
 /PromotionEngine.Core/obj/Release
 /PromotionEngine.Common/obj/Release
 /PromotionEngine/obj/Release
+/PromotionEngine/bin/Debug
+/PromotionEngine.Common/bin/Debug
+/PromotionEngine.Core/bin/Debug
+/PromotionEngine.Core.Test/bin/Debug
+/PromotionEngine.Data/bin/Debug
+/PromotionEngine.Data.Test/bin/Debug
+/PromotionEngine.Type/bin/Debug
+*.user

@@ -1,0 +1,42 @@
+[
+  {
+    "RuleId": 1,
+    "RuleCode": "Rule1",
+    "Description": "Buy 3 SKU item A for 130$",
+    "RuleCondition": {
+      "Name": [ "A", "A", "A" ],
+      "PromotionType": 1,
+      "Discount": 130.0
+    }
+  },
+  {
+    "RuleId": 2,
+    "RuleCode": "Rule2",
+    "Description": "Buy 2 SKU item B for 45$",
+    "RuleCondition": {
+      "Name": [ "B", "B" ],
+      "PromotionType": 1,
+      "Discount": 45.0
+    }
+  },
+  {
+    "RuleId": 3,
+    "RuleCode": "Rule3",
+    "Description": "Buy C And D for 30$",
+    "RuleCondition": {
+      "Name": [ "C", "D" ],
+      "PromotionType": 1,
+      "Discount": 30.0
+    }
+  },
+  {
+    "RuleId": 4,
+    "RuleCode": "Rule4",
+    "Description": "Buy A for 40%",
+    "RuleCondition": {
+      "Name": [ "A" ],
+      "PromotionType": 2,
+      "Discount": 40.0
+    }
+  }
+]

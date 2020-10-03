@@ -54,12 +54,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AppData\AvailableSKU.json" />
+    <None Include="AppData\PromotionRules.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PromotionEngine.Common\PromotionEngine.Common.csproj">
+      <Project>{4AEEA37D-28EC-495A-98B3-5DC2E588B3F0}</Project>
+      <Name>PromotionEngine.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PromotionEngine.Data\PromotionEngine.Data.csproj">
       <Project>{baebc150-d65e-492b-99ae-028ce62c6a6b}</Project>
       <Name>PromotionEngine.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PromotionEngine.Type\PromotionEngine.Type.csproj">
+      <Project>{51CF85F9-E36D-4C54-AA70-226D9AA9A394}</Project>
+      <Name>PromotionEngine.Type</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
