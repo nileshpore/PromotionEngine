@@ -1,9 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using System.IO;
+using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromotionEngine.Common;
 using PromotionEngine.Data.Contract;
 using PromotionEngine.Data.Implementation;
-using System.IO;
-using System.Linq;
 
 namespace PromotionEngine.Data.Test
 {
@@ -20,7 +21,7 @@ namespace PromotionEngine.Data.Test
         {
             //Arrange
             int expectedRules = 2;
-
+            
             //Act
             var rules = ruleRepository.GetRules();
 
@@ -52,7 +53,7 @@ namespace PromotionEngine.Data.Test
         {
             //Arrange
             var appDirectotry = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            var filePath = Path.Combine(appDirectotry, Constant.PromotionRuleFilePath);
+            var filePath = Path.Combine(appDirectotry,Constant.PromotionRuleFilePath);
             File.Delete(filePath);
 
 

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,13 +51,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="AppData\AvailableSKU.json" />
-    <None Include="AppData\PromotionRules.json" />
+    <None Include="AppData\AvailableSKU.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="AppData\PromotionRules.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PromotionEngine.Common\PromotionEngine.Common.csproj">
+      <Project>{4aeea37d-28ec-495a-98b3-5dc2e588b3f0}</Project>
+      <Name>PromotionEngine.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PromotionEngine.Core\PromotionEngine.Core.csproj">
       <Project>{8703a5a6-52b5-441d-82eb-463c44cf1dea}</Project>
       <Name>PromotionEngine.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PromotionEngine.Type\PromotionEngine.Type.csproj">
+      <Project>{51cf85f9-e36d-4c54-aa70-226d9aa9a394}</Project>
+      <Name>PromotionEngine.Type</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
