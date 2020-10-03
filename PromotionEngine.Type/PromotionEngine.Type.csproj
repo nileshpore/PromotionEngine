@@ -47,6 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="RuleCondition.cs" />
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="ShoppingCartItem.cs" />
+    <Compile Include="SKU.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PromotionEngine.Common\PromotionEngine.Common.csproj">
+      <Project>{4aeea37d-28ec-495a-98b3-5dc2e588b3f0}</Project>
+      <Name>PromotionEngine.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
