@@ -9,7 +9,7 @@ Dependent Libraries
 - Get Shopping cart as input
 - Build Pipeline
   -  Initialize SKU Pricing
-  -  Read all rules from repository with best rule as top.
+  -  Read all rules from repository with best rule on top.
   -  Default rule to set price
 - Execute Pipeline  
   -  Execute first rule which will set default pricing for shopping cart item.
